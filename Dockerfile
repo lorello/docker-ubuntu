@@ -8,10 +8,11 @@ RUN apt-get update -qqy && apt-get install -qqy curl git software-properties-com
 RUN apt-add-repository universe
 RUN apt-add-repository multiverse
 
-ENV LANGUAGE en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LC_ALL en_US.UTF-8
-RUN locale-gen en_US.UTF-8
+ENV LANGUAGE it
+ENV LANG it_IT@euro
+ENV LC_ALL it_IT@euro 
+
+RUN locale-gen it_IT@euro
 RUN dpkg-reconfigure locales
 RUN /usr/sbin/update-locale
 
