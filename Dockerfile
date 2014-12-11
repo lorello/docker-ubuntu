@@ -14,3 +14,5 @@ ENV LC_ALL en_US.UTF-8
 RUN locale-gen en_US.UTF-8
 RUN dpkg-reconfigure locales
 RUN /usr/sbin/update-locale
+
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
