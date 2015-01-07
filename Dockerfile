@@ -4,7 +4,7 @@ MAINTAINER LoreLLo <lorenzo.salvadorini@softecspa.it>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update -qqy && apt-get install -qqy curl git software-properties-common build-essential
+RUN apt-get update -qqy && apt-get install -qqy curl wget git software-properties-common build-essential
 RUN apt-add-repository universe
 RUN apt-add-repository multiverse
 
