@@ -19,6 +19,5 @@ RUN /usr/sbin/update-locale
 # http://jasonwilder.com/blog/2014/10/13/a-simple-way-to-dockerize-applications/
 RUN wget https://github.com/jwilder/dockerize/releases/download/v0.0.2/dockerize-linux-amd64-v0.0.2.tar.gz
 RUN tar -C /usr/local/bin -xvzf dockerize-linux-amd64-v0.0.2.tar.gz
-ADD dockerize /usr/local/bin/dockerize
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
