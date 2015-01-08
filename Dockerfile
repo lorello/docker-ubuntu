@@ -8,7 +8,7 @@ RUN apt-get update -qqy && apt-get install -qqy curl wget git software-propertie
 RUN apt-add-repository universe
 RUN apt-add-repository multiverse
 
-# 
+# localization 
 ENV LANGUAGE it
 ENV LANG it_IT@euro
 ENV LC_ALL it_IT@euro 
